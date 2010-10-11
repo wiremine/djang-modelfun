@@ -28,6 +28,7 @@ class Address(models.Model):
     """
     References a class
     """
+    # TODO: What would South Do?
     person = models.ForeignKey(get_model_label_by_role('person', 'people.Person'))
     street1 = models.CharField(blank=True, max_length=100)
 
