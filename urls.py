@@ -14,3 +14,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
 )
+
+# url 
+# name 
+# view (a callable)
+# dictionary 
+# {% url name%}

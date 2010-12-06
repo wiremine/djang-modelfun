@@ -1,6 +1,9 @@
 from django.conf import settings
 from django.contrib.contenttypes.models import ContentType
 
+# This smells a bit like Dependency Injection 
+#    http://code.activestate.com/recipes/413268/
+
 class ModelLookupException(Exception):
     def __init__(self, message):
         self.message = message

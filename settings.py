@@ -83,6 +83,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
+# TODO: call this ROLES? 
 MODELS = {
     'person': 'more_people.PersonWithBio',
 }
@@ -100,4 +101,6 @@ INSTALLED_APPS = (
     
     'people',
     'more_people',
+    
+    'metaquery',
 )
