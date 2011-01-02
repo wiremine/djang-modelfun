@@ -22,8 +22,9 @@ class Post(models.Model):
     title = models.CharField(blank=True, max_length=100)
     body = models.TextField(blank=True)
     timestamp = models.DateField(auto_now_add=True)
-    sample_email = models.EmailField(blank=True, null=True)
     author = models.ForeignKey("auth.User", blank=True, null=True)
+    sample_email = models.EmailField(blank=True, null=True)
+
 
     def __unicode__(self):
         return "Post"
