@@ -4,19 +4,9 @@ from django.conf.urls.defaults import *
 # from django.contrib import admin
 # admin.autodiscover()
 
+from blog.controller import BlogController, blog_controller
+
 urlpatterns = patterns('',
-    # Example:
-    # (r'^modelfun/', include('modelfun.foo.urls')),
-
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # (r'^admin/', include(admin.site.urls)),
+    ('^blog/', include(BlogController.as_urls())),
+    ('^blog2/', include(blog_controller.get_urls()))
 )
-
-# url 
-# name 
-# view (a callable)
-# dictionary 
-# {% url name%}
